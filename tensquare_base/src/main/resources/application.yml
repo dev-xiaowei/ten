@@ -1,0 +1,15 @@
+server:
+  port: 9001
+spring:
+  application:
+    name: tensquare-base   # 微服务名称（提供给SpringCloud远程调用）  tensquare-base
+  datasource: # 数据库连接参数
+    url: jdbc:mysql://192.168.12.132:3306/tensquare_base?characterEncoding=UTF8
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: 123456
+  jpa:
+    show-sql: true  # 打印sql
+    generate-ddl: false # 自动建表
+    database: MySQL  # 数据库类型
+
